@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { PrismaClient } from '@prisma/client';
 
-@Module({})
+@Module({
+    imports: [PrismaClient],
+})
 export class DatabaseModule {}
