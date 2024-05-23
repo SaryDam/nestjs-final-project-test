@@ -16,8 +16,8 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 1. Clonez le dépôt :
 
     ```bash
-    git clone https://github.com/nom-utilisateur/nom-du-projet.git
-    cd nom-du-projet
+    git clone https://github.com/SaryDam/nestjs-final-project-test.git
+    cd nestjs-final-project-test
     ```
 
 2. Installez les dépendances :

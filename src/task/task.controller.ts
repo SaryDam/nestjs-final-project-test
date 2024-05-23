@@ -33,10 +33,8 @@ export class TaskController {
         @Body('priority') priority: number | string,
     ): Promise<{ task: Task }> {
         try {
-            let parsedPriority: number = 0;
-            if (typeof priority === 'string') {
-                parsedPriority = parseInt(priority, 10);
-            }
+            const parsedPriority =
+                await this.taskService.parsedNumber(priority);
             const task = await this.taskService.addTask(
                 name,
                 userId,

@@ -38,7 +38,6 @@ export class UserService {
             await this.prisma.user.deleteMany({});
             return;
         } catch (error) {
-            console.error('Error resetting data:', error);
             throw new Error('Failed to reset data');
         }
     }

@@ -61,4 +61,14 @@ export class TaskService {
     private isValidPriority(priority: any): boolean {
         return typeof priority === 'number' && priority > 0;
     }
+
+    async parsedNumber(priority: number | string) {
+        let parsedPriority: number = 0;
+        if (typeof priority === 'string') {
+            parsedPriority = parseInt(priority, 10);
+            return parsedPriority;
+        } else {
+            throw new Error('Invalid task data');
+        }
+    }
 }
