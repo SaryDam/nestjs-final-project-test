@@ -7,5 +7,6 @@
   "verbose": true,
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
-  }
+  },
+  "maxWorkers":1
 }

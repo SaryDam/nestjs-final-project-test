@@ -1,3 +1,69 @@
+# Projet final NestJS
+
+Ce projet utilise le framework NestJS pour créer une TO DO LIST. Il est configuré pour fonctionner avec une base de données PostgreSQL et Prisma pour l'ORM. Les instructions ci-dessous vous guideront pour démarrer le projet, que vous soyez sur un système Windows ou Linux.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur votre machine :
+
+- Node.js (version 12 ou supérieure)
+- npm (version 6 ou supérieure) ou yarn
+- Git
+- Docker Desktop (Docker nous sert afin d'utilisé PostgreSQL)
+
+## Installation
+
+1. Clonez le dépôt :
+
+    ```bash
+    git clone https://github.com/nom-utilisateur/nom-du-projet.git
+    cd nom-du-projet
+    ```
+
+2. Installez les dépendances :
+ 
+    ```bash
+    npm ci
+    ```
+
+## Démarrage du Serveur
+
+### Sur Windows
+
+Pour démarrer le serveur avec PostgreSQL sur un système Windows, utilisez la commande suivante :
+
+```bash
+npm run start:postgres:windows
+```
+
+### Sur Linux
+
+Pour démarrer le serveur avec PostgreSQL sur un système Linux, utilisez la commande suivante :
+
+```bash
+npm run start:postgres:linux
+```
+
+## Lancé les Test
+
+### Sur Windows
+Pour exécuter les tests end-to-end avec PostgreSQL sur un système Windows, utilisez la commande suivante :
+
+```bash
+npm run test:e2e:postgres:windows
+```
+
+### Sur Linux
+Pour exécuter les tests end-to-end avec PostgreSQL sur un système Linux, utilisez la commande suivante :
+
+```bash
+npm run test:e2e:postgres:linux
+```
+
+
+
+----------------------------------------
+
 # Évaluation finale
 Pour ce test final vous allez être évalués sur votre maîtrise du framework NestJS. Ce projet, qui est une TodoList et qu'il vous faudra dupliquer (fork), contient un certain nombre de tests automatisés. Chacun d'entre eux couvre une fonctionnalité spécifique : création d'un utilisateur, création d'une tâche, vérification que le serveur renvoie une erreur dans tel ou tel cas etc.
 
