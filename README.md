@@ -59,7 +59,9 @@ Pour exécuter les tests end-to-end avec PostgreSQL sur un système Linux, utili
 ```bash
 npm run test:e2e:postgres:linux
 ```
+## Developpeur
 
+Damien CREUX
 
 
 ----------------------------------------
